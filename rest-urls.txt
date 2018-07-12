@@ -1,0 +1,11 @@
+http://localhost:8090/CustomerBrowser/Customers
+http://localhost:8090/CustomerBrowser/VICTE/orders
+http://localhost:8090/CustomerBrowser/10248/details
+
+
+echo "# CustomerBrowser-part1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dhstudents/CustomerBrowser-part1.git
+git push -u origin master

@@ -1,0 +1,86 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 15% 4fr 10%;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "top top"
+    "customers main"
+    "bottom bottom"
+}
+
+h1 , h4 { 
+    padding-left: 40px;
+}
+
+.vhmiddle {
+    height: 80vh
+}
+
+.box {
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+
+header {
+    background-color: #ccc;
+    grid-area: top;
+}
+aside {
+    grid-area: customers;
+}
+
+#main {
+    grid-area: main
+}
+
+#customerlist {
+    overflow-y: scroll;
+    height: 77vh;
+    cursor: pointer;
+}
+
+
+
+#orders {
+    height: 30%;
+}
+#orderdetails {
+    margin-top: 25px;
+    height: 70%;
+}
+
+
+footer {
+    background-color: rgba(15, 13, 13,.4);
+    grid-area: bottom
+}
+
+#page1 {
+    display: block;
+}
+#page2 {
+    display: none;
+}
+
+#od {
+    width: 70%;
+    margin-left:15%; 
+    margin-right:15%;
+}
+div[order]:hover {
+    background-color: lightskyblue;
+}
+div[order] {
+    border: 1px #ccc solid;
+    margin: 1px
+        
+}
